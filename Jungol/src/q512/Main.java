@@ -15,5 +15,11 @@ public class Main {
 		
 		// case 3
 		System.out.printf("%d * %f = %f\n", weight, fRatio, weight * fRatio);
+		
+		int i = 10;
+		double d = 10.0;
+		float f = 10.0f;
+		
+		System.out.println(d);
 	}
 }
