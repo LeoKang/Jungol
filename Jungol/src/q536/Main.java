@@ -4,7 +4,11 @@ public class Main {
 	public static void main(String[] args) {
 		// 1. for문
 		for (int i = 1; i < 16; i++) {
-			System.out.print(i + " ");
+//			System.out.print(i + "?");
+			System.out.print(i);
+			if(i < 15) {
+				System.out.print("?");	
+			}
 		}
 		System.out.println();
 
