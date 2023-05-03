@@ -13,10 +13,12 @@ public class Main {
 		System.out.println(n1);
 		System.out.println(n2);
 		System.out.println(n3);
-		
+
 		int sum = n1 + n2 + n3;
 		System.out.println("sum = " + sum);
 		System.out.println("sum = " + (n1 + n2 + n3));
-		System.out.printf("sum = %d", sum);
+		System.out.printf("sum = %d\n", sum);
+		System.out.printf("sum = " + sum);
+
 	}
 }
