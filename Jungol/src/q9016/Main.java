@@ -10,7 +10,9 @@ public class Main {
 		System.out.print("몸무게를 입력하세요. ");
 		double weight = sc.nextDouble();
 		System.out.print("이름을 입력하세요. ");
+//		String name = sc.nextLine();
 		String name = sc.next();
+//		char name = sc.next().charAt(0);
 		sc.close();
 
 		System.out.println("키 = " + height);
