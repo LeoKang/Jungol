@@ -6,7 +6,6 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int s = 0, e = 0;
-
 		do {
 			s = sc.nextInt();
 			e = sc.nextInt();
@@ -19,17 +18,20 @@ public class Main {
 		sc.close();
 //		System.out.println(s + " " + e);
 
+		// 5 ~ 7
 		if (s < e) {
-			for (int i = s; i <= e; i++) {
-				for (int j = 1; j <= 9; j++) {
-					System.out.println(i + " * " + j + " = " + (i * j));
+			for (int j = 1; j <= 9; j++) {
+				for (int i = s; i <= e; i++) {
+					System.out.print(i + " * " + j + " = ");
+					System.out.printf("%2d   ", (i * j));
 				}
 				System.out.println();
 			}
 		} else {
-			for (int i = s; i >= e; i--) {
-				for (int j = 1; j <= 9; j++) {
-					System.out.println(i + " * " + j + " = " + (i * j));
+			for (int j = 1; j <= 9; j++) {
+				for (int i = s; i >= e; i--) {
+					System.out.print(i + " * " + j + " = ");
+					System.out.printf("%2d   ", (i * j));
 				}
 				System.out.println();
 			}
