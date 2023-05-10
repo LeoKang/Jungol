@@ -5,36 +5,33 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int s = 0, e = 0;
-		do {
+		int s;
+		int e;
+
+		while (true) {
 			s = sc.nextInt();
 			e = sc.nextInt();
-
-			if ((2 <= s && s <= 9) && (2 <= e && e <= 9)) {
+			if (1 < s && s < 10 && 1 < e && e < 10) {
 				break;
 			}
 			System.out.println("INPUT ERROR!");
-		} while (true);
+		}
+		int cnt = s < e ? 1 : -1;
+		if(s<e) {
+			cnt = 1;
+		}else {
+			cnt = -1;
+		}
 		sc.close();
-//		System.out.println(s + " " + e);
 
-		// 5 ~ 7
-		if (s < e) {
-			for (int j = 1; j <= 9; j++) {
-				for (int i = s; i <= e; i++) {
-					System.out.print(i + " * " + j + " = ");
-					System.out.printf("%2d   ", (i * j));
+		for (int i = 1; i < 10; ++i) {
+			for (int j = s;; j += cnt) {
+				System.out.printf("%d * %d = %2d   ", j, i, (j * i));
+				if (j == e) {
+					break;
 				}
-				System.out.println();
 			}
-		} else {
-			for (int j = 1; j <= 9; j++) {
-				for (int i = s; i >= e; i--) {
-					System.out.print(i + " * " + j + " = ");
-					System.out.printf("%2d   ", (i * j));
-				}
-				System.out.println();
-			}
+			System.out.print("\n");
 		}
 	}
 }
