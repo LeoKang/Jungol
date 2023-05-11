@@ -16,9 +16,9 @@ public class Main {
 //		}
 		
 		if(inp[0] == inp[1]) {
-			System.out.println("1");
+			System.out.println("true");
 		}else {
-			System.out.println("0");
+			System.out.println("false");
 		}
 		if(inp[0] != inp[1]) {
 			System.out.println("1");
