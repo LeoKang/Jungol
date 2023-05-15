@@ -2,12 +2,6 @@ package q613;
 
 import java.util.Scanner;
 
-class Student {
-	String name;
-	String school;
-	int grade;
-}
-
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
