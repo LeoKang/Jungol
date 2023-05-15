@@ -2,6 +2,12 @@ package q613;
 
 import java.util.Scanner;
 
+class Student {
+	String name;
+	String school;
+	int grade;
+}
+
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -35,8 +41,5 @@ public class Main {
 		System.out.println("Name : " + s2.name);
 		System.out.println("School : " + s2.school);
 		System.out.println("Grade : " + s2.grade);
-		
-		
-		
 	}
 }
