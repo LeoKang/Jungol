@@ -5,26 +5,24 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Student s1 = new Student();
-
 		String name = sc.next();
 		String school = sc.next();
 		int grade = sc.nextInt();
+		
+		// 생성자 이용
+		Student s1 = new Student(name, school, grade);
 
-//		System.out.println(name);
-//		System.out.println(school);
-//		System.out.println(grade);
+		// 생성자 없이 생성
+//		Student s1 = new Student();
+//		s1.name = name;
+//		s1.school = school;
+//		s1.grade = grade;
 
-		s1.name = name;
-		s1.school = school;
-		s1.grade = grade;
-
-		Student s2 = new Student();
 		name = sc.next();
 		school = sc.next();
 		grade = sc.nextInt();
+		Student s2 = new Student(name, school, grade);
 		sc.close();
-		
 		s2.name = name;
 		s2.school = school;
 		s2.grade = grade;
