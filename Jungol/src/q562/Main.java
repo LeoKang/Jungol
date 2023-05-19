@@ -30,5 +30,4 @@ public class Main {
 		System.out.println("sum : " + sumEven);
 		System.out.printf("avg : %.1f\n", sumOdd / (num.length / (double)2));
 	}
-
 }
